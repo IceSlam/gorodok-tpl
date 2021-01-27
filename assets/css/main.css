@@ -1,2 +1,81 @@
+* {
+		padding: 0;
+		margin: 0;
+		font-family: Roboto, sans-serif;
+}
 
+.is-header .is-navbar {
+		box-shadow: none !important;
+		background: rgba(43, 49, 65, 0.6);
+		padding: 1rem 0 0;
+		position: fixed;
+		display: block;
+		width: 100%;
+}
+.is-header .is-navbar .navbar-brand {
+		font-size: 0.75rem;
+}
+.is-header .is-navbar .navbar-brand img {
+		margin-right: 4rem;
+}
+.is-header .is-navbar .navbar-brand div {
+		max-width: 180px;
+		display: flex;
+}
+.is-header .is-navbar__contacts {
+		color: #ffffff;
+}
+.is-header .is-navbar__contacts__item {
+		margin-right: 3rem;
+}
+.is-header .is-navbar__contacts__item .title {
+		margin-bottom: 0;
+		font-size: 0.625rem;
+		color: rgba(255, 255, 255, 0.5);
+}
+.is-header .is-navbar__contacts__item .title img {
+		margin-left: calc(0% - 15px);
+		margin-right: 0;
+}
+.is-header .is-navbar__contacts__item .drop-link {
+		background: none;
+		border: none;
+}
+.is-header .is-navbar__contacts__item .link {
+		color: #ffffff;
+		font-size: 0.75rem;
+}
+.is-header .is-navbar__contacts__item .dropdown .dropdown-menu {
+		background: rgba(43, 49, 65, 0.1);
+}
+.is-header .is-navbar__contacts__item .dropdown .dropdown-menu a {
+		color: #ffffff;
+		transition: all 0.5s;
+}
+.is-header .is-navbar__contacts__item .dropdown .dropdown-menu a:hover {
+		color: #000000;
+		transition: all 0.5s;
+}
+.is-header .is-navbar .desktop-menu-wrap {
+		border-top: 1px solid rgba(196, 196, 196, 0.3);
+}
+.is-header .is-navbar .desktop-menu-wrap .navbar-nav li {
+		margin: 0rem 2.5rem;
+}
+.is-header .is-navbar .desktop-menu-wrap .navbar-nav li .nav-link {
+		color: #ffffff;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		font-size: 0.875rem;
+		font-weight: 500;
+		border-top: 1px solid rgba(255, 255, 255, 0);
+		transition: all 0.5s;
+}
+.is-header .is-navbar .desktop-menu-wrap .navbar-nav li .nav-link:hover {
+		border-top: 1px solid #fff;
+		transition: all 0.5s;
+}
+.is-header .is-navbar .desktop-menu-wrap .navbar-nav li .nav-link.active {
+		border-top: 1px solid #fff;
+}
 /*# sourceMappingURL=main.css.map */
