@@ -59,6 +59,11 @@
 .is-header .is-navbar .desktop-menu-wrap {
 		border-top: 1px solid rgba(196, 196, 196, 0.3);
 }
+.is-header .is-navbar .desktop-menu-wrap .navbar-nav {
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+}
 .is-header .is-navbar .desktop-menu-wrap .navbar-nav li {
 		margin: 0rem 2.5rem;
 }
