@@ -5,16 +5,19 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif !important;
+  text-decoration: none !important;
 }
 
 .is-header {
+  position: relative;
+  z-index: 1000;
   .is-navbar {
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
     box-shadow: none !important;
     background: rgba(43, 49, 65, 0.6);
-    padding: 1rem 0 0;
+    padding: 0;
     position: fixed;
     display: block;
     width: 100%;
@@ -88,6 +91,77 @@
           .nav-link.active {
             border-top: 1px solid #fff;
           }
+        }
+      }
+    }
+  }
+}
+
+.is-main {
+  .is-slider {
+    min-height: 742px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    .uk-slideshow-items {
+      li {
+        h2 {
+          font-size: 3.4375rem;
+          line-height: 3.125rem;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        p {
+          line-height: 3.125rem;
+          font-size: 1.75rem;
+          color: #ffffff;
+          text-transform: uppercase;
+        }
+      }
+    }
+    &__btn {
+      margin-top: 4rem;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      border-radius: 50px;
+      padding: .75rem 4rem;
+      border: 2px solid #C23A3A;
+      background: #c23a3a;
+      font-size: 1.125rem;
+      font-weight: 500;
+      text-transform: none;
+      transition: all .5s;
+      &:hover {
+        background: #ffffff;
+        color: #c23a3a;
+        transition: all .5s;
+      }
+    }
+    &__mouse {
+      position: absolute;
+      z-index: 1000;
+      bottom: calc(0% - 186px);
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    .uk-dotnav {
+      margin-top: -135px !important;
+      z-index: 1000;
+      position: relative;
+      * {
+        * {
+          border-radius: 0;
+          width: 40px;
+          height: 3px;
+          border: none;
+          background: rgba(220, 221, 226, 0.44);
+        }
+      }
+      .uk-active {
+        * {
+          background: #c23a3a;
         }
       }
     }
