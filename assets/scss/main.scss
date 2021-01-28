@@ -1,4 +1,4 @@
-//@import url(./variables.scss);
+@import "variables.scss";
 
 :root {}
 
@@ -145,6 +145,44 @@
       left: 0;
       right: 0;
       margin: 0 auto;
+    }
+    &__social {
+      position: absolute;
+      z-index: 1000;
+      right: 2.625rem;
+      top: calc(0% + 35%);
+      bottom: 0;
+      margin: auto 0;
+      .btn {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        padding: 0;
+        width: 36px !important;
+        height: 36px !important;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+        transition: all .5s;
+        svg {
+          path {
+            transition: all .5s;
+          }
+        }
+        &:hover {
+          border: 2px solid $gorodokRed;
+          transition: all .5s;
+          svg {
+            path {
+              fill: $gorodokRed;
+              transition: all .5s;
+            }
+          }
+        }
+      }
     }
     .uk-dotnav {
       margin-top: -135px !important;

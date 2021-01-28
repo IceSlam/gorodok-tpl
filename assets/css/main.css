@@ -132,6 +132,38 @@
 		right: 0;
 		margin: 0 auto;
 }
+.is-main .is-slider__social {
+		position: absolute;
+		z-index: 1000;
+		right: 2.625rem;
+		top: calc(0% + 35%);
+		bottom: 0;
+		margin: auto 0;
+}
+.is-main .is-slider__social .btn {
+		box-shadow: none;
+		padding: 0;
+		width: 36px !important;
+		height: 36px !important;
+		border-radius: 50%;
+		border: 2px solid #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 1rem 0;
+		transition: all 0.5s;
+}
+.is-main .is-slider__social .btn svg path {
+		transition: all 0.5s;
+}
+.is-main .is-slider__social .btn:hover {
+		border: 2px solid #c23a3a;
+		transition: all 0.5s;
+}
+.is-main .is-slider__social .btn:hover svg path {
+		fill: #c23a3a;
+		transition: all 0.5s;
+}
 .is-main .is-slider .uk-dotnav {
 		margin-top: -135px !important;
 		z-index: 1000;
