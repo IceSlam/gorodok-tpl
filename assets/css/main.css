@@ -362,6 +362,9 @@
 }
 .is-main .is-about__wrapper {
 		background: url("../img/index_about_bg.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 		padding: 5.35rem 0;
 		border-radius: 10px;
 		z-index: 3;
@@ -399,6 +402,58 @@
 		text-align: center;
 		margin: 1rem auto 0;
 		display: block;
+}
+.is-main .is-about__wrapper-cards {
+		margin-top: 4.6875rem;
+}
+.is-main .is-about__wrapper-cards__card {
+		box-shadow: none;
+		background: none;
+}
+.is-main .is-about__wrapper-cards__card-img {
+		border-radius: 10px;
+		background: url("../img/index_about_card_img.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+.is-main .is-about__wrapper-cards__card-img img {
+		opacity: 0;
+}
+.is-main .is-about__wrapper-cards__card-btn {
+		box-shadow: none;
+		margin: 0 auto;
+		text-align: center;
+		display: block;
+		width: 85%;
+		border-radius: 30px;
+		border: 1px solid #fff;
+		margin-top: 1rem;
+		color: #ffffff;
+		transition: all 0.5s;
+}
+.is-main .is-about__wrapper-cards__card-btn:hover {
+		border: 1px solid #122042;
+		background: #122042;
+		transition: all 0.5s;
+}
+.is-main .is-about__wrapper-cards__card-btn img {
+		margin-right: 0.5rem;
+}
+.is-main .is-about__wrapper-cards__card h5 {
+		text-align: center;
+		color: #ffffff;
+		font-weight: bold;
+		font-size: 1.125rem;
+		text-transform: uppercase;
+}
+.is-main .is-about__wrapper-cards__card p {
+		margin-bottom: 0;
+		margin-top: 0;
+		text-align: center;
+		text-transform: uppercase;
+		color: #ffffff;
+		font-size: 1.125rem;
 }
 .is-main .is-about__line-bold {
 		position: absolute;
