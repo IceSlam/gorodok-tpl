@@ -296,7 +296,9 @@
 		padding: 2.5rem 3rem;
 		border-radius: 10px 10px 0 0;
 		background: #000;
-		background: #122042;
+		background: url("../img/index_working_order_bg.png"), #122042;
+		background-repeat: no-repeat;
+		background-position: left center;
 		overflow: hidden;
 }
 .is-main .is-working__order__block::before {
@@ -318,6 +320,7 @@
 		line-height: 2.8125rem;
 		font-size: 2.375rem;
 		font-weight: 500;
+		text-transform: uppercase;
 }
 .is-main .is-working__order__block__btn {
 		box-shadow: none;

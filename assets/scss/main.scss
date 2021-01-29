@@ -337,7 +337,9 @@
         padding: 2.5rem 3rem;
         border-radius: 10px 10px 0 0;
         background: #000;
-        background: $gorodokDarkBlue;
+        background: url('../img/index_working_order_bg.png'), $gorodokDarkBlue;
+        background-repeat: no-repeat;
+        background-position: left center;
         overflow: hidden;
         &::before {
           content: '';
@@ -350,7 +352,7 @@
           border-radius: 20px;
           border-bottom: none;
           border-left: none;
-          left: calc(50%)
+          left: calc(50%);
         }
         &__title {
           margin-bottom: 0;
@@ -358,6 +360,7 @@
           line-height: 2.8125rem;
           font-size: 2.375rem;
           font-weight: 500;
+          text-transform: uppercase;
         }
         &__btn {
           -webkit-box-shadow: none;
