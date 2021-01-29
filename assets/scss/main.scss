@@ -205,7 +205,9 @@
     }
   }
   .is-working {
+    position: relative;
     padding: 6rem 0 0;
+    overflow: hidden;
     h2 {
       text-align: center;
       text-transform: uppercase;
@@ -382,6 +384,94 @@
           }
         }
       }
+    }
+    &__round-right {
+      position: absolute;
+      bottom: calc(0% - 122px);
+      right: 0;
+    }
+    &__line-bold {
+      position: absolute;
+      left: 0;
+      bottom: calc(0% - 45px);
+      background: #000;
+      display: block;
+      height: 144px;
+      width: 8px;
+    }
+  }
+  .is-about {
+    position: relative;
+    background: $gorodokDarkRed;
+    border-radius: 10px;
+    &__wrapper {
+      background: url('../img/index_about_bg.png');
+      padding: 5.35rem 0;
+      border-radius: 10px;
+      z-index: 3;
+      &__info {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        &-title {
+          font-weight: 500;
+          font-size: 2.375rem;
+          margin-bottom: 0;
+          text-transform: uppercase;
+          line-height: 2.8125rem;
+          color: #ffffff;
+        }
+        &-content {
+          border-left: 1px solid $gorodokGray;
+          padding-left: 3.0625rem;
+          p {
+            color: #ffffff;
+            font-size: 1.125rem;
+            margin-bottom: 0;
+            margin-top: 0;
+          }
+          &__btn {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            color: #ffffff;
+            padding: 0;
+            text-transform: none;
+            font-size: 1.125rem;
+            font-weight: 500;
+            text-align: center;
+            margin: 1rem auto 0;
+            display: block;
+          }
+        }
+      }
+    }
+    &__line-bold {
+      position: absolute;
+      width: 8px;
+      height: 144px;
+      left: 127px;
+      top: calc(0% - 100px);
+      background: #fff;
+      -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+      z-index: 2;
+    }
+    &__line-thin {
+      position: absolute;
+      width: 1px;
+      height: 144px;
+      border-left: 1px solid $gorodokDarkBlue;
+      top: calc(0% - 44px);
+      left: 98px;
+      z-index: 2;
+    }
+    &__logo-left {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
     }
   }
 }
