@@ -98,6 +98,64 @@
 }
 
 .is-main {
+  .section {
+    &__order {
+      margin-top: 5.5rem;
+      &__block {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2.5rem 3rem;
+        border-radius: 10px 10px 0 0;
+        background: #000;
+        background: url('../img/index_working_order_bg.png'), $gorodokDarkBlue;
+        background-repeat: no-repeat;
+        background-position: left center;
+        overflow: hidden;
+        &::before {
+          content: '';
+          position: absolute;
+          display: block;
+          border: 23px solid #fff;
+          height: 160px;
+          width: 160px;
+          transform: rotate(45deg);
+          border-radius: 20px;
+          border-bottom: none;
+          border-left: none;
+          left: calc(50%);
+        }
+        &__title {
+          margin-bottom: 0;
+          color: #ffffff;
+          line-height: 2.8125rem;
+          font-size: 2.375rem;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+        &__btn {
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;
+          border-radius: 50px;
+          padding: .75rem 4rem;
+          border: 2px solid $gorodokRed;
+          background: $gorodokRed;
+          font-size: 1.125rem;
+          font-weight: 500;
+          text-transform: none;
+          transition: all .5s;
+          color: #ffffff;
+          &:hover {
+            background: #ffffff;
+            color: $gorodokRed;
+            transition: all .5s;
+          }
+        }
+      }
+    }
+  }
   .is-slider {
     min-height: 742px;
     height: 100%;
@@ -535,6 +593,89 @@
       bottom: 0;
       left: 0;
       z-index: 1;
+    }
+  }
+  .is-trust {
+    &__wrapper {
+      padding: 5rem 0;
+      &-title {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.875rem;
+        text-align: center;
+      }
+      &-slider {
+        &__navs {
+          &-divider {
+            display: block;
+            height: 100%;
+            border-left: 1px solid $gorodokRed;
+            margin: 0 auto;
+            min-height: 34px;
+            width: 1px;
+            position: absolute;
+            right: 42px;
+          }
+        }
+        &__slides {
+          padding: 1rem 0 2rem;
+          margin-top: 4.1875rem;
+          &-slide {
+            .uk-panel {
+              background: #FFFFFF;
+              box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 100%;
+              min-height: 190px;
+            }
+          }
+        }
+        .uk-slidenav {
+          position: absolute;
+          top: 0;
+          svg {
+            polyline {
+              stroke: rgba(0,0,0,.2) !important;
+              transition: all .5s;
+            }
+          }
+          &:hover {
+            svg {
+              polyline {
+                stroke: $gorodokRed !important;
+                transition: all .5s;
+              }
+            }
+          }
+          &.uk-slidenav-next {
+            right: 0;
+          }
+          &.uk-slidenav-previous {
+            right: 50px;
+          }
+        }
+        .uk-dotnav {
+          z-index: 1000;
+          position: relative;
+          * {
+            * {
+              border-radius: 0;
+              width: 40px;
+              height: 3px;
+              border: none;
+              background: rgba(220, 221, 226, 0.44);
+            }
+          }
+          .uk-active {
+            * {
+              background: #c23a3a;
+            }
+          }
+        }
+      }
     }
   }
 }
