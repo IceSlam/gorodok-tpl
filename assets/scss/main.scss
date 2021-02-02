@@ -678,4 +678,132 @@
       }
     }
   }
+  .is-news {
+    padding: 5.375rem 0;
+    background: $gorodokLightGray;
+    &__title {
+      text-align: center;
+      color: $gorodokDarkBlue;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.875rem;
+      line-height: 3.125rem;
+    }
+    &__cards-wrapper {
+      &__card {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        transition: all .5s;
+        margin-top: 1rem;
+        &:hover {
+          -webkit-box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+          -moz-box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+          box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+          transition: all .5s;
+        }
+        &-header {
+          position: relative;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          -webkit-background-size: cover !important;
+          background-size: cover !important;
+          background-repeat: no-repeat !important;
+          background-position: center !important;
+          &__img {
+            opacity: 0;
+          }
+          &__badge {
+            position: absolute;
+            top: .5rem;
+            right: -.375rem;
+            display: block;
+            padding: .75rem .8125rem .75rem 1.5rem;
+            background: $gorodokRed;
+            -webkit-border-radius: 24px 0 0 24px;
+            -moz-border-radius: 24px 0 0 24px;
+            border-radius: 24px 0 0 24px;
+            color: #ffffff;
+            font-size: .875rem;
+            &::before {bottom: 0;
+              content: "";
+              position: absolute;
+              right: 0;
+              top: 46px;
+              border: 4px solid transparent;
+              border-left: 2px solid $gorodokDarkerRed;
+              border-top: 7px solid $gorodokDarkerRed;
+            }
+          }
+        }
+        &-body {
+          padding: 0;
+          background: #ffffff;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+          padding-bottom: 1.5rem;
+          &__title {
+            margin-top: 1.25rem;
+            font-size: 1.125rem;
+            line-height: 1.375rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $gorodokDarkBlue;
+          }
+          &__btn {
+            display: flex;
+            align-items: center;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            padding: 0 !important;
+            font-size: 1rem;
+            font-weight: 500;
+            text-transform: none;
+            color: $gorodokDarkBlue;
+            &:hover {
+              img {
+                margin-left: 1rem;
+                transition: all .5s;
+              }
+            }
+            img {
+              margin-left: .5rem;
+              transition: all .5s;
+            }
+          }
+        }
+      }
+    }
+    &__btn {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      color: $gorodokRed;
+      text-transform: none;
+      font-size: 1.125rem;
+      font-weight: 500;
+      padding: 1rem 3.375rem;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+      border: 1px solid $gorodokRed;
+      transition: all .5s;
+      &:hover {
+        background: $gorodokRed;
+        color: #ffffff;
+        transition: all .5s;
+      }
+    }
+  }
 }

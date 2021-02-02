@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/gorodok-tpl.iml" filepath="$PROJECT_DIR$/.idea/gorodok-tpl.iml" />
       <module fileurl="file://$PROJECT_DIR$/../remember/.idea/remember.iml" filepath="$PROJECT_DIR$/../remember/.idea/remember.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ГородОк.iml" filepath="$PROJECT_DIR$/.idea/ГородОк.iml" />
     </modules>
   </component>
 </project>
