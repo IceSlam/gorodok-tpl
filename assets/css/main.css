@@ -276,9 +276,9 @@
 		color: #ffffff;
 }
 .is-main .section__order__block__btn:hover {
-		background: #ffffff;
 		color: #c23a3a;
 		transition: all 0.5s;
+		box-shadow: inset 20em 0 0 0 #fff;
 }
 .is-main .is-slider {
 		min-height: 742px;
@@ -311,9 +311,9 @@
 		transition: all 0.5s;
 }
 .is-main .is-slider__btn:hover {
-		background: #ffffff;
 		color: #c23a3a;
 		transition: all 0.5s;
+		box-shadow: inset 20em 0 0 0 #fff;
 }
 .is-main .is-slider__mouse {
 		position: absolute;
@@ -350,6 +350,7 @@
 .is-main .is-slider__social .btn:hover {
 		border: 2px solid #c23a3a;
 		transition: all 0.5s;
+		box-shadow: inset 20em 0 0 0 #fff;
 }
 .is-main .is-slider__social .btn:hover svg path {
 		fill: #c23a3a;
@@ -528,9 +529,9 @@
 		color: #ffffff;
 }
 .is-main .is-working__order__block__btn:hover {
-		background: #ffffff;
 		color: #c23a3a;
 		transition: all 0.5s;
+		box-shadow: inset 20em 0 0 0 #fff;
 }
 .is-main .is-working__round-right {
 		position: absolute;
@@ -625,8 +626,8 @@
 }
 .is-main .is-about__wrapper-cards__card-btn:hover {
 		border: 1px solid #122042;
-		background: #122042;
 		transition: all 0.5s;
+		box-shadow: inset 20em 0 0 0 #122042;
 }
 .is-main .is-about__wrapper-cards__card-btn img {
 		margin-right: 0.5rem;
@@ -840,9 +841,9 @@
 		transition: all 0.5s;
 }
 .is-main .is-news__btn:hover {
-		background: #c23a3a;
 		color: #ffffff;
 		transition: all 0.5s;
+		box-shadow: inset 20em 0 0 0 #c23a3a;
 }
 .is-main .is-news__line-bold {
 		position: absolute;
@@ -883,7 +884,7 @@
 		content: var(--bs-breadcrumb-divider, "-");
 }
 .category .is-main .is-catlist {
-		padding: 1.5rem 0;
+		padding: 1.5rem 0 10rem;
 }
 .category .is-main .is-catlist__title {
 		text-align: center;
@@ -891,6 +892,9 @@
 		text-transform: uppercase;
 		font-size: 1.875rem;
 		color: #122042;
+}
+.category .is-main .is-catlist__catbtns {
+		margin-bottom: 2rem;
 }
 .category .is-main .is-catlist__catbtns-card {
 		padding: 1.25rem;
@@ -945,5 +949,93 @@
 .category .is-main .is-catlist__catbtns-card:hover .is-catlist__catbtns-card__img svg path {
 		fill: #fff;
 		transition: fill 0.5s;
+}
+.category .is-main .is-catlist__cards {
+		padding-top: 2rem;
+}
+.category .is-main .is-catlist__cards-card__wrapper {
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+		border-radius: 10px;
+}
+.category .is-main .is-catlist__cards-card__wrapper-header {
+		padding: 1.5rem 0 1.25rem;
+}
+.category .is-main .is-catlist__cards-card__wrapper-header__title {
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 1.125rem;
+		line-height: 1.3125rem;
+}
+.category .is-main .is-catlist__cards-card__wrapper-body {
+		min-height: 328px;
+		border-radius: 10px;
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+		background-size: cover !important;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 10;
+		position: relative;
+		overflow: hidden;
+		padding: 3rem;
+}
+.category .is-main .is-catlist__cards-card__wrapper-body .mask {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(18, 32, 66, 0.5);
+		transform: translate(-100%, 100%);
+		transition: transform 0.5s;
+		z-index: 11;
+}
+.category .is-main .is-catlist__cards-card__wrapper-body__info {
+		z-index: 12;
+		transform: translate(-100%, 0%);
+		transition: transform 0.5s 0.1s, opacity 0.5s 0.1s;
+		opacity: 0;
+}
+.category .is-main .is-catlist__cards-card__wrapper-body__info p {
+		color: #ffffff;
+		font-size: 1.125rem;
+		line-height: 1.3125rem;
+}
+.category .is-main .is-catlist__cards-card__wrapper-body:hover .mask {
+		transform: translate(0%);
+		transition: transform 0.5s;
+}
+.category .is-main .is-catlist__cards-card__wrapper-body:hover .is-catlist__cards-card__wrapper-body__info {
+		transform: translate(0%);
+		transition: transform 0.5s 0.25s, opacity 0.5s 0.5s;
+		opacity: 1;
+}
+.category .is-main .is-catlist__cards-card__btn {
+		margin: 1.5rem auto;
+		display: block;
+		box-shadow: none;
+		border-radius: 50px;
+		padding: 0.75rem 4rem;
+		border: 2px solid #c23a3a;
+		font-size: 1.125rem;
+		font-weight: 500;
+		text-transform: none;
+		transition: all 0.5s;
+		color: #c23a3a;
+		max-width: 220px;
+		position: relative;
+		overflow: hidden;
+		z-index: 15;
+}
+.category .is-main .is-catlist__cards-card__btn span {
+		position: relative;
+		z-index: 15;
+}
+.category .is-main .is-catlist__cards-card__btn:hover {
+		color: #fff;
+		transition: all 0.5s;
+		box-shadow: inset 15em 0 0 0 #c23a3a;
 }
 /*# sourceMappingURL=main.css.map */
