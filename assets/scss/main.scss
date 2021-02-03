@@ -54,7 +54,7 @@
         }
         .dropdown {
           .dropdown-menu {
-            background: rgba(43,49,65,0.1);
+            background: rgba(43,49,65,0.75);
             a {
               color: #ffffff;
               transition: all .5s;
@@ -92,6 +92,145 @@
             border-top: 1px solid #fff;
           }
         }
+      }
+    }
+  }
+}
+
+.is-footer {
+  background: linear-gradient(90deg, #C23A3A 1.27%, #C23A3A 46.39%);
+  position: relative;
+  &__logo {
+    padding-bottom: 1.125rem;
+    position: relative;
+    min-height: 279px;
+    &-img {
+      position: absolute;
+      top: -2.875rem;
+      left: -4.8125rem;
+    }
+  }
+  &__menu {
+    padding: 4rem 0;
+    li {
+      margin-bottom: .75rem;
+      a {
+        color: #ffffff;
+        font-weight: 500;
+        line-height: 1rem;
+        font-size: .875rem;
+      }
+    }
+  }
+  &__social {
+    padding: 4rem 0;
+    .btn {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      padding: 0;
+      width: 36px !important;
+      height: 36px !important;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem 0;
+      transition: all .5s;
+      &:first-child {
+        margin-top: 0 !important;
+      }
+      svg {
+        path {
+          transition: all .5s;
+        }
+      }
+      &:hover {
+        background: #fff;
+        transition: all .5s;
+        svg {
+          path {
+            fill: $gorodokRed;
+            transition: all .5s;
+          }
+        }
+      }
+    }
+  }
+  &__contacts-wrapper {
+    background: $gorodokFooterBlue;
+    &__content {
+      padding: 4rem 0 4rem 3.125rem;
+      position: relative;
+      height: 100%;
+      &-title {
+        font-weight: bold;
+        font-size: 1.375rem;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+      &-item {
+        .title {
+          margin-bottom: 0;
+          font-size: .625rem;
+          color: rgba(255,255,255,.5);
+          margin-top: 1rem;
+          img {
+            margin-right: .5rem;
+          }
+        }
+        .link {
+          color: #ffffff;
+          font-size: .75rem;
+          margin-left: 1.5rem;
+          display: block;
+        }
+      }
+      &:after {
+        content: "";
+        height: 100%;
+        background: #17264D;
+        position: absolute;
+        display: block;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        transform: translateX(99%);
+      }
+    }
+  }
+  &__copyright {
+    background: $gorodokDarkerBlue;
+    color: rgba(255,255,255,.5);
+    padding: .5rem 0;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    p {
+      margin-bottom: 0;
+      font-weight: 500;
+      font-size: .875rem;
+      transition: color .5s;
+      &:hover {
+        color: #ffffff;
+        transition: color .5s;
+      }
+    }
+    a {
+      color: rgba(255,255,255,.5);
+      transition: color .5s;
+      font-size: .875rem;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        color: #ffffff;
+        transition: color .5s;
       }
     }
   }
@@ -603,6 +742,7 @@
         font-weight: bold;
         font-size: 1.875rem;
         text-align: center;
+        margin-bottom: -2.5rem;
       }
       &-slider {
         &__navs {
@@ -681,6 +821,7 @@
   .is-news {
     padding: 5.375rem 0;
     background: $gorodokLightGray;
+    position: relative;
     &__title {
       text-align: center;
       color: $gorodokDarkBlue;
@@ -804,6 +945,25 @@
         color: #ffffff;
         transition: all .5s;
       }
+    }
+    &__line-bold {
+      position: absolute;
+      top: calc(0% - 100px);
+      right: calc(0% + 100px);
+      width: 8px;
+      height: 144px;
+      background: #ffffff;
+      -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    &__line-thin {
+      position: absolute;
+      top: calc(0% - 44px);
+      right: calc(0% + 144px);
+      width: 1px;
+      height: 144px;
+      background: $gorodokRed;
     }
   }
 }
