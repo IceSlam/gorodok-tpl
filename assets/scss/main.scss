@@ -119,6 +119,12 @@
         font-weight: 500;
         line-height: 1rem;
         font-size: .875rem;
+        transition: all .5s;
+        border-bottom: 1px solid transparent;
+        &:hover {
+          border-bottom: 1px solid $gorodokDarkerBlue;
+          transition: all .5s;
+        }
       }
     }
   }
@@ -964,6 +970,114 @@
       width: 1px;
       height: 144px;
       background: $gorodokRed;
+    }
+  }
+}
+
+.category {
+  .is-header {
+    .is-navbar {
+      background: url("../img/navbar_other_bg.png");
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: top center;
+    }
+  }
+  .is-main {
+    .is-theader {
+      padding-top: 13rem;
+      &__breadcrumbs {
+        &-list {
+          li {
+            font-weight: 500;
+            font-size: .875rem;
+            color: $gorodokDarkBlue;
+            a {
+              color: $gorodokDarkBlue;
+            }
+          }
+          li + li::before {
+            content: var(--bs-breadcrumb-divider,"-");
+          }
+        }
+      }
+    }
+    .is-catlist {
+      padding: 1.5rem 0;
+      &__title {
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.875rem;
+        color: $gorodokDarkBlue;
+      }
+      &__catbtns {
+        &-card {
+          padding: 1.25rem;
+          background: #ffffff;
+          border-radius: 10px;
+          transition: all .5s;
+          -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          cursor: pointer;
+          height: 100%;
+          &__img {
+            margin: 0 auto;
+            padding: 1rem;
+            border-radius: 50%;
+            background: #ffffff;
+            width: 60px;
+            height: 60px;
+            -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            vertical-align: middle;
+            display: flex;
+            transition: background .5s;
+            svg {
+              max-width: 26px;
+              max-height: 26px;
+              display: block;
+              margin: 0 auto;
+              path {
+                transition: fill .5s;
+              }
+            }
+          }
+          &__title {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: .875rem;
+            margin-top: .75rem;
+            color: $gorodokDarkBlue;
+            line-height: 1rem;
+            font-weight: 500;
+          }
+          &:hover {
+            transition: all .5s;
+            -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+            .is-catlist__catbtns-card__img {
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              box-shadow: none;
+              background: $gorodokRed;
+              transition: background .5s;
+              svg {
+                path {
+                  fill: #fff;
+                  transition: fill .5s;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

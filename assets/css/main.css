@@ -114,6 +114,12 @@
 		font-weight: 500;
 		line-height: 1rem;
 		font-size: 0.875rem;
+		transition: all 0.5s;
+		border-bottom: 1px solid transparent;
+}
+.is-footer__menu li a:hover {
+		border-bottom: 1px solid #172035;
+		transition: all 0.5s;
 }
 .is-footer__social {
 		padding: 4rem 0;
@@ -854,5 +860,90 @@
 		width: 1px;
 		height: 144px;
 		background: #c23a3a;
+}
+
+.category .is-header .is-navbar {
+		background: url("../img/navbar_other_bg.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top center;
+}
+.category .is-main .is-theader {
+		padding-top: 13rem;
+}
+.category .is-main .is-theader__breadcrumbs-list li {
+		font-weight: 500;
+		font-size: 0.875rem;
+		color: #122042;
+}
+.category .is-main .is-theader__breadcrumbs-list li a {
+		color: #122042;
+}
+.category .is-main .is-theader__breadcrumbs-list li + li::before {
+		content: var(--bs-breadcrumb-divider, "-");
+}
+.category .is-main .is-catlist {
+		padding: 1.5rem 0;
+}
+.category .is-main .is-catlist__title {
+		text-align: center;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 1.875rem;
+		color: #122042;
+}
+.category .is-main .is-catlist__catbtns-card {
+		padding: 1.25rem;
+		background: #ffffff;
+		border-radius: 10px;
+		transition: all 0.5s;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+		cursor: pointer;
+		height: 100%;
+}
+.category .is-main .is-catlist__catbtns-card__img {
+		margin: 0 auto;
+		padding: 1rem;
+		border-radius: 50%;
+		background: #ffffff;
+		width: 60px;
+		height: 60px;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+		vertical-align: middle;
+		display: flex;
+		transition: background 0.5s;
+}
+.category .is-main .is-catlist__catbtns-card__img svg {
+		max-width: 26px;
+		max-height: 26px;
+		display: block;
+		margin: 0 auto;
+}
+.category .is-main .is-catlist__catbtns-card__img svg path {
+		transition: fill 0.5s;
+}
+.category .is-main .is-catlist__catbtns-card__title {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 0.875rem;
+		margin-top: 0.75rem;
+		color: #122042;
+		line-height: 1rem;
+		font-weight: 500;
+}
+.category .is-main .is-catlist__catbtns-card:hover {
+		transition: all 0.5s;
+		box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+}
+.category .is-main .is-catlist__catbtns-card:hover .is-catlist__catbtns-card__img {
+		box-shadow: none;
+		background: #c23a3a;
+		transition: background 0.5s;
+}
+.category .is-main .is-catlist__catbtns-card:hover .is-catlist__catbtns-card__img svg path {
+		fill: #fff;
+		transition: fill 0.5s;
 }
 /*# sourceMappingURL=main.css.map */
