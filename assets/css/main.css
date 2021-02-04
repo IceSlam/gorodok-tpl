@@ -1038,4 +1038,97 @@
 		transition: all 0.5s;
 		box-shadow: inset 15em 0 0 0 #c23a3a;
 }
+
+.page .is-header .is-navbar {
+		background: url("../img/navbar_other_bg.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top center;
+}
+.page .is-main .is-theader {
+		padding-top: 13rem;
+}
+.page .is-main .is-theader__breadcrumbs-list li {
+		font-weight: 500;
+		font-size: 0.875rem;
+		color: #122042;
+}
+.page .is-main .is-theader__breadcrumbs-list li a {
+		color: #122042;
+}
+.page .is-main .is-theader__breadcrumbs-list li + li::before {
+		content: var(--bs-breadcrumb-divider, "-");
+}
+.page .is-main .is-contacts {
+		padding: 1.5rem 0 10rem;
+}
+.page .is-main .is-contacts__title {
+		text-align: center;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 1.875rem;
+		color: #122042;
+}
+.page .is-main .is-contacts__form {
+		margin-top: 4rem;
+		padding: 5.875rem 0;
+		background: url("../img/contacts_form_bg.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+}
+.page .is-main .is-contacts__form-title {
+		text-align: center;
+		font-weight: 500;
+		color: #ffffff;
+		font-size: 1.5rem;
+		line-height: 1.75rem;
+		margin-bottom: 3rem;
+}
+.page .is-main .is-contacts__form-btn {
+		box-shadow: none;
+		border-radius: 50px;
+		padding: 0.75rem 4rem;
+		border: 2px solid #c23a3a;
+		background: #c23a3a;
+		font-size: 1.125rem;
+		font-weight: 500;
+		text-transform: none;
+		transition: all 0.5s;
+		color: #ffffff;
+}
+.page .is-main .is-contacts__form-btn:hover {
+		color: #c23a3a;
+		transition: all 0.5s;
+		box-shadow: inset 20em 0 0 0 #fff;
+}
+.page .is-main .is-contacts__form-input {
+		height: 100%;
+		background: #ffffff;
+		border-radius: 5px;
+}
+.page .is-main .is-contacts__form-input .form-control {
+		height: 100%;
+		background: #ffffff;
+		border-radius: 10px;
+		border: 1px solid transparent;
+}
+.page .is-main .is-contacts__form-input .form-control:focus {
+		border: 1px solid transparent;
+}
+.page .is-main .is-contacts__form-input .form-control:focus ~ .form-label {
+		transform: translateY(-1.2rem) translateY(0.1rem) scale(0.8);
+		color: #c23a3a;
+}
+.page .is-main .is-contacts__form-input .form-control:focus ~ .form-label svg path {
+		fill: #c23a3a;
+}
+.page .is-main .is-contacts__form-input .form-label {
+		top: 0.65rem;
+		display: flex;
+		align-items: center;
+}
+.page .is-main .is-contacts__form-input .form-label svg {
+		margin-right: 0.5rem;
+}
 /*# sourceMappingURL=main.css.map */
