@@ -1131,4 +1131,50 @@
 .page .is-main .is-contacts__form-input .form-label svg {
 		margin-right: 0.5rem;
 }
+.page .is-main .is-contacts__map {
+		margin-top: 5rem;
+}
+.page .is-main .is-contacts__map .col-lg-12 {
+		padding: 0;
+		position: relative;
+}
+.page .is-main .is-contacts__map-info {
+		position: absolute;
+		top: 1.75rem;
+		left: 2.1875rem;
+		padding: 2.5rem;
+		background: #ffffff;
+		border-radius: 10px;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.page .is-main .is-contacts__map-info__item-title {
+		margin-bottom: 0;
+		font-size: 0.875rem;
+		line-height: 1rem;
+		color: #122042;
+		margin-left: 1rem;
+		font-weight: 500;
+		margin-bottom: 0.5rem;
+}
+.page .is-main .is-contacts__map-info__item-title.address {
+		margin-left: 0;
+		margin-top: 2.25rem;
+}
+.page .is-main .is-contacts__map-info__item-title span {
+		opacity: 0.5;
+}
+.page .is-main .is-contacts__map-info__item-link {
+		color: #122042;
+		font-size: 0.875rem;
+		font-weight: 500;
+		line-height: 1rem;
+		display: block;
+		margin-bottom: 0.5rem;
+}
+.page .is-main .is-contacts__map-info__item-link.address {
+		margin-left: 1.5rem;
+}
+.page .is-main .is-contacts__map-info__item-link img {
+		margin-right: 0.5rem;
+}
 /*# sourceMappingURL=main.css.map */
