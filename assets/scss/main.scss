@@ -1358,7 +1358,6 @@
       }
     }
     &-about {
-      margin-bottom: -1rem;
       padding-top: 10rem;
       padding-bottom: 6.25rem;
       background: url('../img/about_page_block_bg.png'), #fff;
@@ -1498,6 +1497,66 @@
             bottom: 0;
             right: -150px;
             z-index: 19;
+          }
+        }
+      }
+    }
+    .is-advantages {
+      margin-top: -.5rem;
+      background: rgb(115, 72, 72) none repeat scroll 0% 0%;
+      &__wrapper {
+        padding: 5.6875rem 0rem 5rem;
+        background: url("../img/index_about_bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+      &__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        font-weight: bold;
+        color: #ffffff;
+      }
+      &__content {
+        margin-top: 4.25rem;
+        &-card {
+          padding: 0rem 2rem;
+          margin-top: 1rem;
+          &__img {
+            border-radius: 10px;
+            width: 100%;
+            min-height: 334px;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            -webkit-background-size: cover !important;
+            background-size: cover !important;
+          }
+          &__title {
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            display: block;
+            max-width: 280px;
+            margin: 1.75rem auto 0;
+            text-align: center;
+            &:after {
+              content: '';
+              height: 1px;
+              width: 100%;
+              max-width: 280px;
+              display: block;
+              margin: .5rem auto;
+              background: rgba(255, 255, 255, 0.7);
+            }
+          }
+          &__caption {
+            margin-top: 0;
+            font-weight: 500;
+            color: #ffffff;
+            text-align: center;
           }
         }
       }
