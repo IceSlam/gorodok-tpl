@@ -21,10 +21,24 @@
     position: fixed;
     display: block;
     width: 100%;
+    transition: all .5s;
+    z-index: 1000;
+    &.thin {
+      background: url("../img/navbar_other_bg.png");
+      transition: all .5s;
+      .navbar-brand {
+        img {
+          margin-right: 1rem;
+          height: 48px;
+          transition: all .5s;
+        }
+      }
+    }
     .navbar-brand {
       font-size: .75rem;
       img {
         margin-right: 4rem;
+        transition: all .5s;
       }
       div {
         max-width: 180px;
