@@ -1632,4 +1632,9 @@
 		height: 144px;
 		background: #ffffff;
 }
+.page .is-main .is-work__logo-bg {
+		position: absolute;
+		left: 0;
+		bottom: -50px;
+}
 /*# sourceMappingURL=main.css.map */

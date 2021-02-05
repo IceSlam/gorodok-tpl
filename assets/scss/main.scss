@@ -1847,6 +1847,11 @@
         height: 144px;
         background: #ffffff;
       }
+      &__logo-bg {
+        position: absolute;
+        left: 0;
+        bottom: -50px;
+      }
     }
   }
 }
