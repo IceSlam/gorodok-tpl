@@ -1642,7 +1642,14 @@
             font-weight: 500;
             font-size: 3.125rem;
             line-height: 3.6875rem;
-            span {
+            .capt {
+              margin-bottom: 0;
+              color: $gorodokDarkBlue;
+              font-weight: 500;
+              font-size: 3.125rem;
+              line-height: 3.6875rem;
+            }
+            .qtype {
               font-size: 1.375rem;
               line-height: .625rem;
             }
