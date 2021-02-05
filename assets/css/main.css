@@ -1378,6 +1378,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
+		overflow: hidden;
 }
 .page .is-main .is-records__cards {
 		padding-bottom: 6.5rem;
@@ -1464,5 +1465,171 @@
 		position: absolute;
 		bottom: calc(0% - 122px);
 		right: 0;
+}
+.page .is-main .is-work {
+		background: url("../img/about_page_work_bg.png"), #122042;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		padding: 5.875rem 0;
+		position: relative;
+}
+.page .is-main .is-work__title {
+		color: #ffffff;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1.875rem;
+		line-height: 2.25rem;
+}
+.page .is-main .is-work__cards-card {
+		padding: 5rem 0;
+		border-bottom: 3px dashed rgba(255, 255, 255, 0.5);
+		color: #ffffff;
+		text-align: center;
+}
+.page .is-main .is-work__cards-card__content {
+		position: relative;
+		max-width: 300px;
+		margin: 0 auto;
+}
+.page .is-main .is-work__cards-card__content-img {
+		max-width: 300px;
+		width: 100%;
+}
+.page .is-main .is-work__cards-card__content-title {
+		display: flex;
+		align-items: center;
+		margin-bottom: 0;
+		color: #ffffff;
+		margin-top: 0.625rem;
+}
+.page .is-main .is-work__cards-card__content-title span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		max-width: 35px;
+		width: 100%;
+		height: 35px;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+		background: #ffffff;
+		margin-right: 1rem;
+		color: #122042;
+}
+.page .is-main .is-work__cards-card__content-badge {
+		width: 104px;
+		height: 104px;
+		display: flex;
+		align-items: center;
+		position: absolute;
+		top: -1.25rem;
+		right: -1.25rem;
+		justify-content: center;
+		background: #122042;
+		border-radius: 50%;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.page .is-main .is-work__cards-card:nth-child(1) {
+		padding-bottom: 1rem;
+}
+.page .is-main .is-work__cards-card:nth-child(2) {
+		border-bottom: none;
+		padding-bottom: 1rem;
+}
+.page .is-main .is-work__cards-card:nth-child(3) {
+		border-bottom: none;
+		padding-bottom: 1rem;
+}
+.page .is-main .is-work__cards-card:nth-child(4) {
+		order: 6;
+		border-radius: 0 45% 45% 0;
+		border-right: 3px dashed rgba(255, 255, 255, 0.5);
+		border-top: 3px dashed rgba(255, 255, 255, 0.5);
+		margin-top: -0.2rem;
+		padding-bottom: 1rem;
+}
+.page .is-main .is-work__cards-card:nth-child(5) {
+		order: 5;
+		border-top: 3px dashed rgba(255, 255, 255, 0.5);
+		margin-top: -0.2rem;
+		padding-bottom: 1rem;
+}
+.page .is-main .is-work__cards-card:nth-child(6) {
+		order: 4;
+		border-bottom: none;
+		padding-bottom: 1rem;
+}
+.page .is-main .is-work__cards-card:nth-child(7) {
+		order: 7;
+		border-radius: 45% 0 0 45%;
+		border-top: 3px dashed rgba(255, 255, 255, 0.5);
+		border-left: 3px dashed rgba(255, 255, 255, 0.4);
+		border-bottom: none;
+		margin-top: -0.2rem;
+		height: 300px;
+		padding: 0;
+}
+.page .is-main .is-work__banner {
+		margin-top: -15rem;
+		padding: 3rem;
+}
+.page .is-main .is-work__banner-title {
+		font-weight: bold;
+		color: #ffffff;
+		font-size: 2.375rem;
+		line-height: 4.375rem;
+		text-transform: uppercase;
+		margin-bottom: 4rem;
+}
+.page .is-main .is-work__banner-wrapper {
+		background: url("../img/about_page_work_banner_img.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		padding: 10rem 5rem;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+}
+.page .is-main .is-work__banner-wrapper:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		display: block;
+		background: url("../img/about_page_work_bg.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+}
+.page .is-main .is-work__banner-btn {
+		box-shadow: none;
+		border-radius: 50px;
+		padding: 0.75rem 4rem;
+		border: 2px solid #c23a3a;
+		background: #c23a3a;
+		font-size: 1.125rem;
+		font-weight: 500;
+		text-transform: none;
+		transition: all 0.5s;
+		color: #ffffff;
+}
+.page .is-main .is-work__banner-btn:hover {
+		color: #c23a3a;
+		transition: all 0.5s;
+		box-shadow: inset 20em 0 0 0 #fff;
+}
+.page .is-main .is-work__line-bold {
+		position: absolute;
+		top: 123px;
+		left: 131px;
+		width: 8px;
+		height: 144px;
+		background: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
