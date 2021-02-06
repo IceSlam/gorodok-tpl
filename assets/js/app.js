@@ -1,22 +1,47 @@
-const records = document.querySelectorAll('.capt');
-window.addEventListener('scroll', countUp);
+$(function () {
+    var fx = function fx() {
+        $(".capt").each(function (i, el) {
+            var data = parseInt(this.dataset.n, 10);
+            var props = {
+                "from": {
+                    "count": 0
+                },
+                "to": {
+                    "count": data
+                }
+            };
+            $(props.from).animate(props.to, {
+                duration: 1000 * 1,
+                step: function (now, fx) {
+                    $(el).text(Math.ceil(now));
+                },
+                complete:function() {
+                    if (el.dataset.sym !== undefined) {
+                        el.textContent = el.textContent.concat(el.dataset.sym)
+                    }
+                }
+            });
+        });
+    };
 
-function up(record)
-{
-   let number = 0;
-   let interval = setInterval(() => {
-        if(number <= record.dataset.n){
-            record.innerHTML = number++;
+    var reset = function reset() {
+        //console.log($(this).scrollTop())
+        if ($(this).scrollTop() > 1300) {
+            $(this).off("scroll");
+            fx()
         }
+    };
 
-   }, 10)
-}
+    $(window).on("scroll", reset);
+});
 
-function countUp()
-{
-    if(window.pageYOffset > 1300){
-        for(let record of records) up(record);
-        window.removeEventListener('scroll',  countUp, false);
+$('.is-reviews__slider-slide__more').click(function(eventObject){
+    $(this).toggleClass('rotate');
+    $(this).parent().find('.is-reviews__slider-slide__review').toggleClass('show');
+    if ($(this).parent().find('.is-reviews__slider-slide__review').hasClass('show')) {
+        $(this).html('Скрыть <img src="./assets/img/about_page_reviews_more.svg" alt="Скрыть">');
+    } else {
+        $(this).html('Подробнее <img src="./assets/img/about_page_reviews_more.svg" alt="Больше">');
     }
-    
-}
+    return false;
+});
