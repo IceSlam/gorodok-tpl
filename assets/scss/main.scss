@@ -1209,6 +1209,153 @@
         }
       }
     }
+    .is-category-title {
+      background: $gorodokLightGray;
+      padding: 5.75rem 0rem 14.125rem;
+      &__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.875rem;
+        max-width: 740px;
+        display: block;
+        margin: 0 auto;
+        color: $gorodokDarkBlue;
+      }
+    }
+    .is-category-products {
+      position: relative;
+      background: #ffffff;
+      padding: 2rem 0;
+      &__card {
+        &-wrapper {
+          &__img {
+            padding: 1rem;
+            &-inner {
+              -webkit-border-radius: 10px;
+              -moz-border-radius: 10px;
+              border-radius: 10px;
+              background-repeat: no-repeat !important;
+              -webkit-background-size: cover !important;
+              background-size: cover !important;
+              background-position: center !important;
+              min-height: 316px;
+              -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+              -moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+              box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+              height: 100%;
+            }
+          }
+          &__info {
+            padding: 1rem;
+            &-content {
+              -webkit-border-radius: 10px;
+              -moz-border-radius: 10px;
+              border-radius: 10px;
+              -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+              -moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+              box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+              padding: 1.5rem;
+              height: 100%;
+              &__title {
+                font-weight: bold;
+                font-size: 1.75rem;
+                line-height: 2.125rem;
+                text-transform: uppercase;
+                color: $gorodokDarkBlue;
+              }
+              &__content {
+                p {
+                  margin-bottom: 0;
+                  color: $gorodokDarkBlue;
+                  font-size: 1rem;
+                  font-weight: 400;
+                  line-height: 1.75rem;
+                }
+              }
+            }
+          }
+        }
+        &-portfolio {
+          margin-top: 3rem;
+          &__title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.75rem;
+            line-height: 2.125rem;
+            text-transform: uppercase;
+            color: $gorodokDarkBlue;
+          }
+          &__cards {
+            &-card {
+              padding: 1rem;
+              &__inner {
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                background: #ffffff;
+                -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+                -moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                &-img {
+                  min-height: 247px;
+                  background-repeat: no-repeat !important;
+                  -webkit-background-size: cover !important;
+                  background-size: cover !important;
+                  background-position: center !important;
+                }
+                &-title {
+                  text-transform: uppercase;
+                  font-weight: bold;
+                  text-align: center;
+                  margin-top: 1.25rem;
+                  line-height: 1.25rem;
+                  color: $gorodokDarkBlue;
+                  padding: 0rem 1rem;
+                  &:after {
+                    content: '';
+                    width: 75%;
+                    height: 1px;
+                    display: block;
+                    background: $gorodokDarkBlue;
+                    margin: .85rem auto .5rem;
+                  }
+                }
+                &-info {
+                  padding: 1rem;
+                  p {
+                    font-size: .875rem;
+                    line-height: 1.75rem;
+                    font-weight: 500;
+                    color: $gorodokDarkBlue;
+                    text-align: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &__line-bold {
+        position: absolute;
+        top: -72px;
+        left: 143px;
+        width: 8px;
+        height: 144px;
+        background: #fff;
+        -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+      }
+      &__line-thin {
+        position: absolute;
+        top: 0;
+        left: 114px;
+        width: 1px;
+        height: 144px;
+        background: #B6191C;
+      }
+    }
   }
 }
 
