@@ -1004,6 +1004,16 @@
   }
 }
 
+.single {
+  .is-main {
+    .is-category-products {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
 .category {
   .is-header {
     .is-navbar {
@@ -1221,6 +1231,67 @@
         margin: 0 auto;
         color: $gorodokDarkBlue;
       }
+      &__dropdown {
+        &-btn {
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;
+          border-radius: 50px;
+          padding: .75rem 4rem;
+          border: 2px solid $gorodokRed;
+          background: #fff;
+          font-size: 1.125rem;
+          font-weight: 500;
+          text-transform: none;
+          transition: all .5s;
+          color: $gorodokRed;
+          margin: 0 auto;
+          position: relative;
+          z-index: 70;
+          &:hover {
+            color: #fff;
+            transition: all .5s;
+            -webkit-box-shadow: inset 20em 0 0 0 $gorodokRed;
+            -moz-box-shadow: inset 20em 0 0 0 $gorodokRed;
+            box-shadow: inset 20em 0 0 0 $gorodokRed;
+          }
+        }
+        ul {
+          padding-top: 1.5rem;
+          z-index: 65;
+          width: 100%;
+          margin: -1.5rem auto 0 !important;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+          -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          li {
+            &:first-child {
+              a {
+                -webkit-border-radius: 0 !important;
+                -moz-border-radius: 0 !important;
+                border-radius: 0 !important;
+              }
+            }
+            a {
+              padding: 1.5rem;
+              color: $gorodokDarkBlue;
+              text-transform: uppercase;
+              font-weight: 500;
+              &:hover {
+                color: #fff;
+                transition: all .5s;
+                -webkit-box-shadow: inset 20em 0 0 0 $gorodokRed;
+                -moz-box-shadow: inset 20em 0 0 0 $gorodokRed;
+                box-shadow: inset 20em 0 0 0 $gorodokRed;
+                background: #ffffff;
+              }
+            }
+          }
+        }
+      }
     }
     .is-category-products {
       position: relative;
@@ -1372,6 +1443,28 @@
             -webkit-box-shadow: inset 20em 0 0 0 #fff;
             -moz-box-shadow: inset 20em 0 0 0 #fff;
             box-shadow: inset 20em 0 0 0 #fff;
+          }
+        }
+        &-bbtn {
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;
+          border-radius: 50px;
+          padding: .75rem 4rem;
+          border: 2px solid $gorodokRedCategory;
+          background: #fff;
+          font-size: 1.125rem;
+          font-weight: 500;
+          text-transform: none;
+          transition: all .5s;
+          color: $gorodokRedCategory;
+          margin: 0 auto;
+          &:hover {
+            color: #fff;
+            transition: all .5s;
+            -webkit-box-shadow: inset 20em 0 0 0 $gorodokRedCategory;
+            -moz-box-shadow: inset 20em 0 0 0 $gorodokRedCategory;
+            box-shadow: inset 20em 0 0 0 $gorodokRedCategory;
           }
         }
       }
