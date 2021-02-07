@@ -674,6 +674,9 @@
             text-align: center;
             margin: 1rem auto 0;
             display: block;
+            svg {
+              max-width: 12px;
+            }
           }
         }
       }
@@ -1312,7 +1315,7 @@
         position: relative;
         z-index: 60;
         &:nth-child(1) {
-          margin-top: -15rem !important;
+          margin-top: -15rem;
         }
         &-wrapper {
           &__img {

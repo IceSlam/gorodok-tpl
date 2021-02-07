@@ -608,6 +608,9 @@
 		margin: 1rem auto 0;
 		display: block;
 }
+.is-main .is-about__wrapper__info-content__btn svg {
+		max-width: 12px;
+}
 .is-main .is-about__wrapper-cards {
 		margin-top: 4.6875rem;
 }
@@ -1132,7 +1135,7 @@
 		z-index: 60;
 }
 .category .is-main .is-category-products__card:nth-child(1) {
-		margin-top: -15rem !important;
+		margin-top: -15rem;
 }
 .category .is-main .is-category-products__card-wrapper__img {
 		padding: 1rem;
