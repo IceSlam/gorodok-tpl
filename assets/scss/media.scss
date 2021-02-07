@@ -1705,3 +1705,71 @@
     }
   }
 }
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .is-footer {
+    &__contacts {
+      &-wrapper {
+        &__content {
+          &-title {
+            position: relative;
+            z-index: 70;
+          }
+          &-item {
+            position: relative;
+            z-index: 70;
+          }
+          &:after {
+            -webkit-transform: translate(43%);
+            -moz-transform: translate(43%);
+            -ms-transform: translate(43%);
+            -o-transform: translate(43%);
+            transform: translate(43%);
+            z-index: 69;
+          }
+        }
+      }
+    }
+  }
+
+  .is-main {
+    .is-about {
+      &__line {
+        &-bold {
+          left: 75px;
+        }
+        &-thin {
+          left: 36px;
+        }
+      }
+    }
+    .is-news {
+      &__line {
+        &-bold {
+          right: 36px;
+        }
+        &-thin {
+          right: 75px;
+        }
+      }
+    }
+  }
+
+  .page {
+    .is-main {
+      &-about {
+        -webkit-background-size: 100%;
+        background-size: 75%;
+        .is-about {
+          &__content {
+            &-info {
+              p {
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

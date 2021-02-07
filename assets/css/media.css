@@ -1366,4 +1366,38 @@
 				word-break: break-word;
 		}
 }
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+		.is-footer__contacts-wrapper__content-title {
+				position: relative;
+				z-index: 70;
+		}
+		.is-footer__contacts-wrapper__content-item {
+				position: relative;
+				z-index: 70;
+		}
+		.is-footer__contacts-wrapper__content:after {
+				transform: translate(43%);
+				z-index: 69;
+		}
+
+		.is-main .is-about__line-bold {
+				left: 75px;
+		}
+		.is-main .is-about__line-thin {
+				left: 36px;
+		}
+		.is-main .is-news__line-bold {
+				right: 36px;
+		}
+		.is-main .is-news__line-thin {
+				right: 75px;
+		}
+
+		.page .is-main-about {
+				background-size: 75%;
+		}
+		.page .is-main-about .is-about__content-info p {
+				color: #ffffff;
+		}
+}
 /*# sourceMappingURL=media.css.map */
