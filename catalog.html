@@ -28,14 +28,14 @@
                 alt=""
                 loading="lazy"
             />
-            Рекламно-производственная компания
+            <span>
+                        Рекламно-производственная компания
+                    </span>
           </a>
           <button
               class="navbar-toggler"
               type="button"
-              data-mdb-toggle="collapse"
-              data-mdb-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
+              onclick="showMenu()"
               aria-expanded="false"
               aria-label="Toggle navigation"
           >
@@ -91,7 +91,7 @@
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
+                <a class="nav-link active" aria-current="page" href="#">
                   Главная
                 </a>
               </li>
@@ -101,7 +101,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">
+                <a class="nav-link" href="#">
                   Каталог
                 </a>
               </li>
@@ -114,6 +114,93 @@
                 <a class="nav-link" href="#">Контакты</a>
               </li>
             </ul>
+          </div>
+        </div>
+      </nav>
+      <nav id="is-navbar-mobile" class="is-navbar-mobile d-lg-none navbar navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+                src="./assets/img/gorodok-navbar-logo.png"
+                alt=""
+                loading="lazy"
+            />
+            <span>
+                        Рекламно-производственная компания
+                    </span>
+          </a>
+          <div class="container desktop-menu-wrap">
+            <div class="">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    Главная
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    О компании
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    Каталог
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    Прайс
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="is-navbar-mobile__divider"></div>
+          <div class="is-navbar-mobile__contacts-wrapper" id="">
+            <div class="is-navbar__contacts is-navbar-mobile__contacts ms-auto d-flex">
+              <div class="is-navbar__contacts__item is-navbar-mobile__contacts__item">
+                <p class="title">
+                  <img src="./assets/img/map.svg" alt="">Адрес
+                </p>
+                <a href="" class="link">
+                  Кызыл, Рабочая, 208
+                </a>
+              </div>
+              <div class="is-navbar__contacts__item is-navbar-mobile__contacts__item">
+                <p class="title">
+                  <img src="./assets/img/email.svg" alt="">
+                  Наша почта
+                </p>
+                <a href="mailto:info@gorodok17.ru" class="link">
+                  info@gorodok17.ru
+                </a>
+              </div>
+              <div class="is-navbar__contacts__item is-navbar-mobile__contacts__item">
+                <p class="title">
+                  <img src="./assets/img/phone.svg" alt="">
+                  Наши телефоны
+                </p>
+                <div class="dropdown">
+                  <button
+                      class="link drop-link dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-mdb-toggle="dropdown"
+                      aria-expanded="false"
+                  >
+                    +7 (39422) 2 19 94
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="tel:+7 (39422) 2 19 94">+7 (39422) 2 19 94</a></li>
+                    <li><a class="dropdown-item" href="tel:+7 (91335) 38 858">+7 (91335) 38 858</a></li>
+                    <li><a class="dropdown-item" href="tel:+7 (92326) 66 667">+7 (92326) 66 667</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>

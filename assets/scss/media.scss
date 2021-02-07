@@ -29,6 +29,72 @@
         }
       }
     }
+    .is-navbar-mobile {
+      transition: all .5s ease-in-out;
+      transform: translate(0%, 100%);
+      width: 100% !important;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      opacity: 0;
+      z-index: 300;
+      padding: 1rem;
+      display: block;
+      background: #2b3141;
+      overflow: hidden;
+      &.show {
+        transform: translate(0%);
+        opacity: 1;
+        transition: all .5s ease-in-out;
+      }
+      &__divider {
+        max-width: 80%;
+        width: 100%;
+        margin: 1rem auto;
+        display: block;
+        background: rgba(255,255,255,.5);
+        height: 1px;
+      }
+      .navbar-brand {
+        padding-top: 3rem;
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+        span {
+          display: block;
+          margin: 0 auto;
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+      &__contacts {
+        display: block !important;
+        width: 100%;
+        &-wrapper {
+          width: 100%;
+        }
+        &__item {
+          display: block;
+          margin: 0 auto;
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+      }
+      .desktop-menu-wrap {
+        .navbar-nav {
+          li {
+            text-align: center;
+          }
+        }
+      }
+    }
   }
   .is-footer {
     &__menu {
@@ -127,6 +193,7 @@
       &__mouse {
         max-width: 124px;
         bottom: calc(0% - 100px);
+        z-index: 100;
       }
       .uk-dotnav {
         display: none;

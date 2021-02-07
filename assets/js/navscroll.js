@@ -22,3 +22,7 @@
     }
     window.addEventListener('scroll', trackScroll);
 })();
+
+showMenu = () => {
+    document.getElementById('is-navbar-mobile').classList.toggle("show")
+}
