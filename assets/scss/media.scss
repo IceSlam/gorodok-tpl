@@ -1733,6 +1733,19 @@
   }
 
   .is-main {
+    .is-slider {
+      min-height: 700px;
+      .uk-slideshow-items {
+        li {
+          img {
+            height: 150%;
+          }
+        }
+      }
+      &__mouse {
+        bottom: calc(0% - 180px);
+      }
+    }
     .is-about {
       &__line {
         &-bold {

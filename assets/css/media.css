@@ -1380,6 +1380,15 @@
 				z-index: 69;
 		}
 
+		.is-main .is-slider {
+				min-height: 700px;
+		}
+		.is-main .is-slider .uk-slideshow-items li img {
+				height: 150%;
+		}
+		.is-main .is-slider__mouse {
+				bottom: calc(0% - 180px);
+		}
 		.is-main .is-about__line-bold {
 				left: 75px;
 		}
