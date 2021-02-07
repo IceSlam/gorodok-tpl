@@ -1,3 +1,7 @@
+* {
+		border: 1px solid red;
+}
+
 @media screen and (max-width: 575px) {
 		.is-header {
 				overflow: hidden;
@@ -21,8 +25,9 @@
 				border-top: none;
 		}
 		.is-header .is-navbar .navbar-toggler svg {
+				max-width: 24px;
 				width: 100%;
-				height: 24px;
+				max-height: 24px;
 		}
 		.is-header .is-navbar-mobile {
 				transition: all 0.5s ease-in-out;
