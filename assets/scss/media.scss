@@ -1561,3 +1561,147 @@
     }
   }
 }
+
+@media screen and (min-width: 992px) and (max-width:  1199px) {
+  .is-header {
+    .is-navbar {
+      .navbar-brand {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+  .is-footer {
+    &__contacts {
+      &-wrapper {
+        &__content {
+          &-title {
+            z-index: 75;
+            position: relative;
+          }
+          &-item {
+            z-index: 75;
+            position: relative;
+          }
+          &:after {
+            -webkit-transform: translate(38%);
+            -moz-transform: translate(38%);
+            -ms-transform: translate(38%);
+            -o-transform: translate(38%);
+            transform: translate(38%);
+            z-index: 74;
+          }
+        }
+      }
+    }
+  }
+
+  .is-main {
+    .section {
+      &__order {
+        &__block {
+          z-index: 70;
+          &:before {
+            left: 40%;
+          }
+        }
+      }
+    }
+    .is-slider {
+      min-height: 600px;
+      .uk-slideshow-items {
+        li {
+          img {
+            height: 150%;
+          }
+        }
+      }
+      &__mouse {
+        bottom: calc(0% - 180px);
+      }
+    }
+    .is-working {
+      padding: 3rem 0 0;
+      h2 {
+        margin-bottom: 3rem;
+      }
+      &__round-right {
+        z-index: 69;
+      }
+    }
+    .is-about {
+      &__wrapper {
+        &-cards {
+          &__card {
+            z-index: 2;
+            &-btn {
+              width: 100%;
+            }
+          }
+        }
+      }
+      &__logo-left {
+        opacity: .25;
+      }
+      &__line {
+        &-bold {
+          left: 50px;
+        }
+        &-thin {
+          left: 25px;
+        }
+      }
+    }
+    .is-news {
+      padding: 3rem 0;
+      &__line {
+        &-bold {
+          right: 50px;
+        }
+        &-thin {
+          right: 25px;
+        }
+      }
+    }
+  }
+
+  .page {
+    .is-main {
+      &-about {
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        .is-about {
+          &__content {
+            &-bgi {
+              right: 0;
+            }
+          }
+        }
+      }
+      .is-about {
+        &__content {
+          &-info {
+            p {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .category {
+    .is-main {
+      .is-catlist {
+        &__catbtns {
+          &-card {
+            &__title {
+              word-break: break-word;
+            }
+          }
+        }
+      }
+    }
+  }
+}
