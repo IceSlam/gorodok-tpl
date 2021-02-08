@@ -1,11 +1,11 @@
-@import "variables.scss";
+@import "vars";
 
 :root {}
 
 * {
   padding: 0;
   margin: 0;
-  font-family: Roboto, sans-serif !important;
+  font-family: Roboto, 'Font Awesome 5 Free', sans-serif !important;
   text-decoration: none !important;
 }
 
@@ -1660,7 +1660,7 @@
       background: url('../img/about_page_block_bg.png'), #fff;
       background-repeat: no-repeat;
       -webkit-background-size: auto;
-      background-size: 52%;
+      background-size: 53%;
       background-position: left bottom;
       .is-theader {
         padding-top: 3rem;
