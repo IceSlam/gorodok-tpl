@@ -342,8 +342,6 @@
     }
     &__btn {
       margin-top: 4rem;
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
       box-shadow: none;
       border-radius: 50px;
       padding: .75rem 4rem;
@@ -356,9 +354,7 @@
       &:hover {
         color: #c23a3a;
         transition: all .5s;
-        -webkit-box-shadow: inset 20em 0 0 0 #fff;
-        -moz-box-shadow: inset 20em 0 0 0 #fff;
-        box-shadow: inset 20em 0 0 0 #fff;
+        background: #ffffff;
       }
     }
     &__mouse {
