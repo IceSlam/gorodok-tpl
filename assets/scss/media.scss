@@ -129,6 +129,7 @@
     &__contacts {
       &-wrapper {
         &__content {
+          text-align: left;
           padding: 1rem;
           &-title {
             position: relative;
@@ -165,6 +166,8 @@
       &__order {
         margin-top: 2.5rem;
         &__block {
+          margin-bottom: .5rem;
+          border-radius: 10px;
           display: block;
           &:before {
             display: none;
@@ -262,6 +265,9 @@
     .is-trust {
       &__wrapper {
         padding: 2rem;
+        &-title {
+          margin-bottom: 1rem;
+        }
         &-slider {
           .uk-dotnav {
             li {
@@ -272,6 +278,9 @@
       }
     }
     .is-news {
+      &__title {
+        font-size: 1.625rem;
+      }
       &__line-bold {
         display: none;
       }
@@ -301,9 +310,16 @@
         .is-about {
           &__content {
             margin-top: 0;
+            &-info {
+              padding-right: 1rem;
+              text-align: center;
+            }
             &-video {
               padding-left: 1rem;
               margin-top: 1rem;
+              &__info {
+                text-align: center;
+              }
             }
             &-bgi {
               display: none;
@@ -319,6 +335,9 @@
             max-width: none;
             height: auto;
             padding: 3rem;
+            &__title {
+              text-align: center;
+            }
             &__wrapper {
               order: 1;
               margin-top: 0;
@@ -330,6 +349,13 @@
             }
           }
           &-square {
+            &__caption {
+              font-size: 2.5rem;
+              text-align: left;
+              .capt {
+                font-size: 2.5rem;
+              }
+            }
             &__wrapper {
               margin-top: 1rem;
               &:nth-child(1) {
@@ -387,9 +413,12 @@
           }
         }
         &__banner {
+          padding: 1rem;
           &-title {
             font-size: 2rem;
             text-align: center;
+            line-height: 2rem;
+            margin-bottom: 1rem;
           }
           &-wrapper {
             padding: 3rem 1.5rem;
@@ -415,10 +444,22 @@
           line-height: 2rem;
         }
         &__slider {
+          margin-top: 0;
+          &-slide {
+            min-width: auto;
+            &__review {
+              &.show {
+                margin-top: -16rem;
+              }
+            }
+          }
           &-wrapper {
+            .is-trust__wrapper-slider__navs {
+              margin-bottom: 1rem;
+            }
             .uk-slider-items {
               li {
-                width: 100%;
+                width: 95%;
               }
             }
           }

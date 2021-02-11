@@ -113,6 +113,7 @@
 				margin-top: 1rem !important;
 		}
 		.is-footer__contacts-wrapper__content {
+				text-align: left;
 				padding: 1rem;
 		}
 		.is-footer__contacts-wrapper__content-title {
@@ -141,6 +142,8 @@
 				margin-top: 2.5rem;
 		}
 		.is-main .section__order__block {
+				margin-bottom: 0.5rem;
+				border-radius: 10px;
 				display: block;
 		}
 		.is-main .section__order__block:before {
@@ -220,8 +223,14 @@
 		.is-main .is-trust__wrapper {
 				padding: 2rem;
 		}
+		.is-main .is-trust__wrapper-title {
+				margin-bottom: 1rem;
+		}
 		.is-main .is-trust__wrapper-slider .uk-dotnav li {
 				margin-bottom: 1rem;
+		}
+		.is-main .is-news__title {
+				font-size: 1.625rem;
 		}
 		.is-main .is-news__line-bold {
 				display: none;
@@ -247,9 +256,16 @@
 		.page .is-main .is-main-about .is-about__content {
 				margin-top: 0;
 		}
+		.page .is-main .is-main-about .is-about__content-info {
+				padding-right: 1rem;
+				text-align: center;
+		}
 		.page .is-main .is-main-about .is-about__content-video {
 				padding-left: 1rem;
 				margin-top: 1rem;
+		}
+		.page .is-main .is-main-about .is-about__content-video__info {
+				text-align: center;
 		}
 		.page .is-main .is-main-about .is-about__content-bgi {
 				display: none;
@@ -265,6 +281,9 @@
 				height: auto;
 				padding: 3rem;
 		}
+		.page .is-main .is-records__cards-circle__title {
+				text-align: center;
+		}
 		.page .is-main .is-records__cards-circle__wrapper {
 				order: 1;
 				margin-top: 0;
@@ -273,6 +292,13 @@
 		.page .is-main .is-records__cards-circle__inner {
 				max-width: 300px;
 				height: 300px;
+		}
+		.page .is-main .is-records__cards-square__caption {
+				font-size: 2.5rem;
+				text-align: left;
+		}
+		.page .is-main .is-records__cards-square__caption .capt {
+				font-size: 2.5rem;
 		}
 		.page .is-main .is-records__cards-square__wrapper {
 				margin-top: 1rem;
@@ -320,9 +346,14 @@
 		.page .is-main .is-work__cards-card:nth-child(7) {
 				border-top: none;
 		}
+		.page .is-main .is-work__banner {
+				padding: 1rem;
+		}
 		.page .is-main .is-work__banner-title {
 				font-size: 2rem;
 				text-align: center;
+				line-height: 2rem;
+				margin-bottom: 1rem;
 		}
 		.page .is-main .is-work__banner-wrapper {
 				padding: 3rem 1.5rem;
@@ -346,8 +377,20 @@
 		.page .is-main .is-reviews__title {
 				line-height: 2rem;
 		}
+		.page .is-main .is-reviews__slider {
+				margin-top: 0;
+		}
+		.page .is-main .is-reviews__slider-slide {
+				min-width: auto;
+		}
+		.page .is-main .is-reviews__slider-slide__review.show {
+				margin-top: -16rem;
+		}
+		.page .is-main .is-reviews__slider-wrapper .is-trust__wrapper-slider__navs {
+				margin-bottom: 1rem;
+		}
 		.page .is-main .is-reviews__slider-wrapper .uk-slider-items li {
-				width: 100%;
+				width: 95%;
 		}
 		.page .is-main .is-reviews__line-thin {
 				top: -80px;
