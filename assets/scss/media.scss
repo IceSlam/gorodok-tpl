@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "vars";
 
 @media screen and (max-width: 575px) {
   .is-header {
@@ -9,6 +9,20 @@
       &.thin {
         background: rgba(43,49,65,1);
         position: fixed;
+      }
+      &__contacts {
+        color: #ffffff;
+        &__item {
+          margin-right: 3rem;
+          &.mob-top-phone-navbar {
+            display: block;
+            .title {
+              img {
+                margin-left: 0;
+              }
+            }
+          }
+        }
       }
       .navbar-brand {
         img {
@@ -508,6 +522,20 @@
       &.thin {
         background: rgba(43,49,65,1);
         position: fixed;
+      }
+      &__contacts {
+        color: #ffffff;
+        &__item {
+          margin-right: 3rem;
+          &.mob-top-phone-navbar {
+            display: block;
+            .title {
+              img {
+                margin-left: 0;
+              }
+            }
+          }
+        }
       }
       .navbar-brand {
         img {
@@ -1016,6 +1044,20 @@
       &.thin {
         background: rgba(43,49,65,1);
         position: fixed;
+      }
+      &__contacts {
+        color: #ffffff;
+        &__item {
+          margin-right: 3rem;
+          &.mob-top-phone-navbar {
+            display: block;
+            .title {
+              img {
+                margin-left: 0;
+              }
+            }
+          }
+        }
       }
       .navbar-brand {
         img {

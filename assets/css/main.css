@@ -5,6 +5,18 @@
 		text-decoration: none !important;
 }
 
+.form-check-input[type=checkbox]:checked {
+		background-color: #c23a3a;
+}
+
+.form-check-input:checked {
+		border-color: #c23a3a;
+}
+
+.form-check-input:focus {
+		background-color: #c23a3a;
+}
+
 .is-header {
 		position: relative;
 		z-index: 1000;
@@ -44,6 +56,9 @@
 }
 .is-header .is-navbar__contacts__item {
 		margin-right: 3rem;
+}
+.is-header .is-navbar__contacts__item.mob-top-phone-navbar {
+		display: none;
 }
 .is-header .is-navbar__contacts__item .title {
 		margin-bottom: 0;
@@ -1237,7 +1252,7 @@
 		text-transform: none;
 		transition: all 0.5s;
 		color: #ffffff;
-		margin: 0 auto;
+		margin: 1rem;
 }
 .category .is-main .is-category-products__card-btn:hover {
 		color: #B6191C;
@@ -1255,7 +1270,7 @@
 		text-transform: none;
 		transition: all 0.5s;
 		color: #B6191C;
-		margin: 0 auto;
+		margin: 1rem;
 }
 .category .is-main .is-category-products__card-bbtn:hover {
 		color: #fff;

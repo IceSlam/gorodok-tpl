@@ -9,6 +9,18 @@
   text-decoration: none !important;
 }
 
+.form-check-input[type="checkbox"]:checked {
+  background-color: $gorodokRed;
+}
+
+.form-check-input:checked {
+  border-color: $gorodokRed;
+}
+
+.form-check-input:focus {
+  background-color: $gorodokRed;
+}
+
 .is-header {
   position: relative;
   z-index: 1000;
@@ -49,6 +61,9 @@
       color: #ffffff;
       &__item {
         margin-right: 3rem;
+        &.mob-top-phone-navbar {
+          display: none;
+        }
         .title {
           margin-bottom: 0;
           font-size: .625rem;
@@ -1435,7 +1450,7 @@
           text-transform: none;
           transition: all .5s;
           color: #ffffff;
-          margin: 0 auto;
+          margin: 1rem;
           &:hover {
             color: $gorodokRedCategory;
             transition: all .5s;
@@ -1457,7 +1472,7 @@
           text-transform: none;
           transition: all .5s;
           color: $gorodokRedCategory;
-          margin: 0 auto;
+          margin: 1rem;
           &:hover {
             color: #fff;
             transition: all .5s;
