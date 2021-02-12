@@ -308,6 +308,78 @@
 		transition: all 0.5s;
 		box-shadow: inset 20em 0 0 0 #fff;
 }
+.is-main .section__order__modal .modal-dialog {
+		max-width: 650px;
+}
+.is-main .section__order__modal .modal-dialog .modal-content .modal-header {
+		padding: 1rem 1rem 0;
+		border-bottom: 0px;
+}
+.is-main .section__order__modal .modal-dialog .modal-content .modal-header .modal-title {
+		font-size: 2rem;
+		font-weight: 500;
+}
+.is-main .section__order__modal .modal-dialog .modal-content .modal-header .btn-close {
+		position: absolute;
+		top: -1.5rem;
+		right: -1.5rem;
+}
+.is-main .section__order__modal .modal-dialog .modal-content .form-control {
+		height: 64px;
+		background: #ffffff;
+		border-radius: 10px;
+		border: 1px solid transparent;
+}
+.is-main .section__order__modal .modal-dialog .modal-content .form-control:focus {
+		border: 1px solid transparent;
+}
+.is-main .section__order__modal .modal-dialog .modal-content .form-control:focus ~ .form-label {
+		transform: translateY(-1.2rem) translateY(0.1rem) scale(0.8);
+		color: #c23a3a;
+}
+.is-main .section__order__modal .modal-dialog .modal-content .form-control:focus ~ .form-label svg path {
+		fill: #c23a3a;
+}
+.is-main .section__order__modal .modal-dialog .modal-content .form-label {
+		top: 0.65rem;
+		display: flex;
+		align-items: center;
+}
+.is-main .section__order__modal .modal-dialog .modal-content .form-label svg {
+		margin-right: 0.5rem;
+}
+.is-main .section__order__modal .modal-dialog .modal-content .modal-footer {
+		border-top: 0px;
+		display: flex;
+		justify-content: space-between;
+}
+.is-main .section__order__modal .modal-dialog .modal-content .btn {
+		box-shadow: none;
+		border-radius: 50px;
+		padding: 0.5rem 3rem;
+		border: 2px solid #c23a3a;
+		background: #c23a3a;
+		font-size: 1rem;
+		font-weight: 500;
+		text-transform: none;
+		transition: all 0.5s;
+		color: #ffffff;
+		text-shadow: none;
+}
+.is-main .section__order__modal .modal-dialog .modal-content .btn.is-btn-close {
+		color: #c23a3a;
+		background: #fff;
+}
+.is-main .section__order__modal .modal-dialog .modal-content .btn.is-btn-close:hover {
+		color: #fff;
+		transition: all 0.5s;
+		box-shadow: inset 20em 0 0 0 #c23a3a;
+}
+.is-main .section__order__modal .modal-dialog .modal-content .btn:hover {
+		color: #c23a3a;
+		transition: all 0.5s;
+		box-shadow: inset 20em 0 0 0 #fff;
+}
 .is-main .is-slider {
 		min-height: 742px;
 		height: 100%;

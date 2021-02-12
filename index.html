@@ -442,9 +442,86 @@
                             <h4 class="section__order__block__title">
                                 Запросить расчеты
                             </h4>
-                            <a href="" class="btn section__order__block__btn">
+                            <button
+                                type="button"
+                                class="btn section__order__block__btn"
+                                data-mdb-toggle="modal"
+                                data-mdb-target="#section-order-modal"
+                            >
                                 Оставить заявку
-                            </a>
+                            </button>
+                            <div
+                                class="modal fade section__order__modal"
+                                id="section-order-modal"
+                                tabindex="-1"
+                                aria-labelledby="section-order-modal-label"
+                                aria-hidden="true"
+                            >
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="section-order-modal-label">
+                                                Оставить заявку
+                                            </h5>
+                                            <button
+                                                type="button"
+                                                class="btn-close"
+                                                data-mdb-dismiss="modal"
+                                                aria-label="Close"
+                                            ></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <!-- Name input -->
+                                                <div class="form-outline mb-4">
+                                                    <input type="text" id="section-order-form-name" class="form-control" />
+                                                    <label class="form-label" for="section-order-form-name">
+                                                        Ваше имя
+                                                    </label>
+                                                </div>
+
+                                                <!-- Email input -->
+                                                <div class="form-outline mb-4">
+                                                    <input type="email" id="section-order-form-email" class="form-control" />
+                                                    <label class="form-label" for="section-order-form-email">
+                                                        Ваш E-mail
+                                                    </label>
+                                                </div>
+
+                                                <!-- Message input -->
+                                                <div class="form-outline mb-4">
+                                                    <textarea class="form-control" id="section-order-form-message" rows="4"></textarea>
+                                                    <label class="form-label" for="section-order-form-message">
+                                                        Ваше сообщение
+                                                    </label>
+                                                </div>
+
+                                                <!-- Checkbox -->
+                                                <div class="form-check d-flex mb-4 px-0" >
+                                                    <input
+                                                        class="form-check-input me-0 mx-0"
+                                                        type="checkbox"
+                                                        value=""
+                                                        id="form4Example4"
+                                                        style="margin-left: 1rem;width: 16px;height: 16px;"
+                                                    />
+                                                    <label class="form-check-label mx-3" for="form4Example4">
+                                                        С <a href="!#" style="color: #c23a3a;">Политикой конфиденциальности и обработки персональных данных</a> ознакомлен
+                                                    </label>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn is-btn-close" data-mdb-dismiss="modal">
+                                                        Отмена
+                                                    </button>
+                                                    <button type="submit" class="btn">
+                                                        Отправить
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
